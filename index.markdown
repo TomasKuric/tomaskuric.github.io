@@ -1,0 +1,176 @@
+---
+layout: default
+title: Home
+---
+
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="brand">TK</div>
+      <div>
+        <div style="font-weight:700">Tomas Kuric</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px">Financial Mathematics • Student</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ghost" href="/resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <h1>Hi — I'm Tomas. I turn numbers into clear models and visuals.</h1>
+        <p>I study financial mathematics and enjoy translating quantitative ideas into reproducible code, clean reports and interactive visuals. Below are a few selected projects — mostly Python, some R and a little web work.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-hidden="false">
+        <div class="blob"></div>
+        <div style="display:flex;align-items:center;gap:12px;position:relative;z-index:2">
+          <img class="avatar" src="https://via.placeholder.com/200x200.png?text=Photo" alt="Portrait">
+          <div>
+            <div class="meta">
+              <div>
+                <h3>Tomas Kuric</h3>
+                <p>Financial Mathematics • University</p>
+              </div>
+            </div>
+            <div class="small">Available for internships & entry-level quantitative roles. Open to remote or on-site opportunities.</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 style="margin:0 0 18px 0">Selected projects</h2>
+      <div class="projects-grid">
+        <article class="card" data-proj="1">
+          <div class="thumb">─ Pricing Monte Carlo ─</div>
+          <h4>Monte Carlo Option Pricer</h4>
+          <p>Fast vectorised pricer for vanilla & barrier options. Includes variance reduction and sensitivity estimation.</p>
+          <div class="tech">
+            <span class="tag">Python</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <div class="links">
+            <a class="link" href="#" data-open="1">Details</a>
+            <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric','_blank')">Code</a>
+          </div>
+        </article>
+
+        <article class="card" data-proj="2">
+          <div class="thumb">─ Time Series Dashboard ─</div>
+          <h4>Risk Dashboard</h4>
+          <p>Interactive dashboard showing VaR, rolling volatility and scenario analysis. Built with Plotly + Dash.</p>
+          <div class="tech">
+            <span class="tag">Python</span>
+            <span class="tag">Plotly</span>
+            <span class="tag">Dash</span>
+          </div>
+          <div class="links">
+            <a class="link" href="#" data-open="2">Details</a>
+            <a class="link" href="#" onclick="event.preventDefault();window.open('https://yourdashdemo.example','_blank')">Demo</a>
+          </div>
+        </article>
+
+        <article class="card" data-proj="3">
+          <div class="thumb">─ Term Structure Study ─</div>
+          <h4>Term Structure Analysis</h4>
+          <p>Yield curve modelling (Svensson & Nelson–Siegel) and forecast evaluation. Reproducible notebook included.</p>
+          <div class="tech">
+            <span class="tag">R</span>
+            <span class="tag">tidyverse</span>
+            <span class="tag">ggplot2</span>
+          </div>
+          <div class="links">
+            <a class="link" href="#" data-open="3">Details</a>
+            <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric/term-structure','_blank')">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <h2 style="margin-top:0">About me</h2>
+        <p style="color:var(--muted)">I'm a student with interests in quantitative finance: stochastic calculus, time series, risk modelling and numerical methods. I prefer clean, reproducible code and clear visualisations.</p>
+        <p style="color:var(--muted)">Current interests: option pricing, portfolio optimisation and model risk.</p>
+      </div>
+      <div>
+        <h3 style="margin:0">Skills</h3>
+        <div class="skills" style="margin-top:10px">
+          <span class="tag">Python</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">R</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Time Series</span>
+          <span class="tag">Mathematical Finance</span>
+        </div>
+        <div style="margin-top:16px;color:var(--muted);font-size:13px">Open to collaborating on open-source projects and demos.</div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-bottom:48px">
+      <h2 style="margin-top:0">Contact</h2>
+      <p style="color:var(--muted)">If you'd like to discuss internships, projects or collaborations — email me or connect on LinkedIn.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <a class="btn btn-primary" href="mailto:you@example.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/tomaskuric" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Tomas Kuric</div>
+    <div style="display:flex;gap:10px">
+      <a href="https://github.com/tomaskuric" target="_blank" style="color:var(--muted);text-decoration:none">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank" style="color:var(--muted);text-decoration:none">LinkedIn</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const projectData = {
+    1: { title: 'Monte Carlo Option Pricer', body: 'Vectorised payoff generation, antithetic sampling, control variates, and simple benchmarking (Jupyter notebook).' },
+    2: { title: 'Risk Dashboard', body: 'Plotly Dash app with rolling VaR, historical scenarios and simple stress-tests.' },
+    3: { title: 'Term Structure Analysis', body: 'Curve fitting, bootstrapping and visual analysis in a reproducible notebook.' }
+  }
+
+  document.querySelectorAll('[data-open]').forEach(btn => {
+    btn.addEventListener('click', (e) => { openModal(e.currentTarget.getAttribute('data-open')); });
+  });
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      const pid = card.getAttribute('data-proj'); if(pid) openModal(pid);
+    })
+  })
+  function openModal(id){
+    const data = projectData[id]; if(!data) return;
+    document.getElementById('modalTitle').textContent = data.title;
+    document.getElementById('modalBody').innerHTML = `<p>${data.body}</p><p style="margin-top:12px;">Links: <a href="https://github.com/tomaskuric" target="_blank">Code</a> • <a href="#">Notebook</a></p>`;
+    document.getElementById('modalBackdrop').style.display = 'grid';
+    document.getElementById('closeModal').focus();
+  }
+  document.getElementById('closeModal').addEventListener('click', () => { document.getElementById('modalBackdrop').style.display = 'none'; })
+  document.getElementById('modalBackdrop').addEventListener('click', (e) => { if(e.target === e.currentTarget) e.currentTarget.style.display = 'none'; })
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      const el = document.querySelector(a.getAttribute('href'));
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}) }
+    })
+  })
+</script>
