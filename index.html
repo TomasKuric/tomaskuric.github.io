@@ -3,6 +3,18 @@ layout: default
 title: Home
 ---
 
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tomas Kuric — Financial Mathematics Student</title>
+  <meta name="description" content="Portfolio of a Financial Mathematics student — projects, skills and contact." />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
 <div class="container">
   <header>
     <div class="logo">
@@ -21,6 +33,7 @@ title: Home
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <div class="intro">
         <h1>Hi — I'm Tomas. I turn numbers into clear models and visuals.</h1>
@@ -48,6 +61,7 @@ title: Home
       </aside>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
       <h2 style="margin:0 0 18px 0">Selected projects</h2>
       <div class="projects-grid">
@@ -98,6 +112,7 @@ title: Home
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
       <div>
         <h2 style="margin-top:0">About me</h2>
@@ -120,6 +135,7 @@ title: Home
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" style="margin-bottom:48px">
       <h2 style="margin-top:0">Contact</h2>
       <p style="color:var(--muted)">If you'd like to discuss internships, projects or collaborations — email me or connect on LinkedIn.</p>
@@ -140,6 +156,17 @@ title: Home
   </footer>
 </div>
 
+<!-- Modal -->
+<div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+  <div class="modal" role="document">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <h3 id="modalTitle">Project</h3>
+      <button class="close-btn" id="closeModal">✕</button>
+    </div>
+    <div id="modalBody" style="color:var(--muted)"></div>
+  </div>
+</div>
+
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -152,11 +179,13 @@ title: Home
   document.querySelectorAll('[data-open]').forEach(btn => {
     btn.addEventListener('click', (e) => { openModal(e.currentTarget.getAttribute('data-open')); });
   });
+
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', (e) => {
       const pid = card.getAttribute('data-proj'); if(pid) openModal(pid);
     })
   })
+
   function openModal(id){
     const data = projectData[id]; if(!data) return;
     document.getElementById('modalTitle').textContent = data.title;
@@ -164,6 +193,7 @@ title: Home
     document.getElementById('modalBackdrop').style.display = 'grid';
     document.getElementById('closeModal').focus();
   }
+
   document.getElementById('closeModal').addEventListener('click', () => { document.getElementById('modalBackdrop').style.display = 'none'; })
   document.getElementById('modalBackdrop').addEventListener('click', (e) => { if(e.target === e.currentTarget) e.currentTarget.style.display = 'none'; })
 
@@ -174,3 +204,6 @@ title: Home
     })
   })
 </script>
+
+</body>
+</html>
