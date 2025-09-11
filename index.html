@@ -1,15 +1,9 @@
----
-layout: default
-title: Home
----
-
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tomas Kuric — Financial Mathematics Student</title>
+  <title>Home</title>
   <meta name="description" content="Portfolio of a Financial Mathematics student — projects, skills and contact." />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -20,7 +14,7 @@ title: Home
     <div class="logo">
       <div class="brand">TK</div>
       <div>
-        <div style="font-weight:700">Tomas Kuric</div>
+        <div style="font-weight:700">Tomáš Kuric</div>
         <div style="font-size:12px;color:var(--muted);margin-top:3px">Financial Mathematics • Student</div>
       </div>
     </div>
@@ -36,8 +30,8 @@ title: Home
     <!-- Hero Section -->
     <section class="hero">
       <div class="intro">
-        <h1>Hi — I'm Tomas. I turn numbers into clear models and visuals.</h1>
-        <p>I study financial mathematics and enjoy translating quantitative ideas into reproducible code, clean reports and interactive visuals. Below are a few selected projects — mostly Python, some R and a little web work.</p>
+        <h1>Hi — I'm Tomas. I make numbers speak through models and visuals.</h1>
+        <p>I study financial mathematics and enjoy translating quantitative ideas into code and clean reports. Below are a few selected projects — mostly Python, some R and a little web work.</p>
         <div class="ctas">
           <a class="btn btn-primary" href="#projects">See my work</a>
           <a class="btn btn-ghost" href="#contact">Get in touch</a>
@@ -51,11 +45,11 @@ title: Home
           <div>
             <div class="meta">
               <div>
-                <h3>Tomas Kuric</h3>
-                <p>Financial Mathematics • University</p>
+                <h3>Tomáš Kuric</h3>
+                <p>Financial Mathematics • Comenius University Bratislava</p>
               </div>
             </div>
-            <div class="small">Available for internships & entry-level quantitative roles. Open to remote or on-site opportunities.</div>
+            <div class="small">Available for internships & entry-level quantitative roles.</div>
           </div>
         </div>
       </aside>
@@ -66,17 +60,17 @@ title: Home
       <h2 style="margin:0 0 18px 0">Selected projects</h2>
       <div class="projects-grid">
         <article class="card" data-proj="1">
-          <div class="thumb">─ Pricing Monte Carlo ─</div>
-          <h4>Monte Carlo Option Pricer</h4>
-          <p>Fast vectorised pricer for vanilla & barrier options. Includes variance reduction and sensitivity estimation.</p>
+          <div class="thumb">─ Interior Point Methods ─</div>
+          <h4>Solving Linear Programming Problems Using Interior Point Methods</h4>
+          <p>Implemented Interior Point Methods to efficiently solve linear optimization problems, finding optimal solutions for resource allocation, scheduling, and portfolio optimization scenarios.</p>
           <div class="tech">
             <span class="tag">Python</span>
             <span class="tag">NumPy</span>
-            <span class="tag">Pandas</span>
+            <span class="tag">SciPy</span>
           </div>
           <div class="links">
             <a class="link" href="#" data-open="1">Details</a>
-            <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric','_blank')">Code</a>
+            <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/TomasKuric/Projects/blob/main/InteriorPointMethod.py','_blank')">Code</a>
           </div>
         </article>
 
@@ -171,13 +165,15 @@ title: Home
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const projectData = {
-    1: { title: 'Monte Carlo Option Pricer', body: 'Vectorised payoff generation, antithetic sampling, control variates, and simple benchmarking (Jupyter notebook).' },
+    1: { title: 'Interior Point Methods', body: 'Implemented Interior Point Methods to efficiently solve linear optimization problems, finding optimal solutions for resource allocation, scheduling, and portfolio optimization scenarios.' },
     2: { title: 'Risk Dashboard', body: 'Plotly Dash app with rolling VaR, historical scenarios and simple stress-tests.' },
     3: { title: 'Term Structure Analysis', body: 'Curve fitting, bootstrapping and visual analysis in a reproducible notebook.' }
   }
 
   document.querySelectorAll('[data-open]').forEach(btn => {
-    btn.addEventListener('click', (e) => { openModal(e.currentTarget.getAttribute('data-open')); });
+    btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal(e.currentTarget.getAttribute('data-open')); });
   });
 
   document.querySelectorAll('.card').forEach(card => {
@@ -189,7 +185,7 @@ title: Home
   function openModal(id){
     const data = projectData[id]; if(!data) return;
     document.getElementById('modalTitle').textContent = data.title;
-    document.getElementById('modalBody').innerHTML = `<p>${data.body}</p><p style="margin-top:12px;">Links: <a href="https://github.com/tomaskuric" target="_blank">Code</a> • <a href="#">Notebook</a></p>`;
+    document.getElementById('modalBody').innerHTML = `<p>${data.body}</p><p style="margin-top:12px;">Links: <a href="https://github.com/TomasKuric/Projects/blob/main/InteriorPointMethod.py" target="_blank">Code</a> • <a href="#">Notebook</a></p>`;
     document.getElementById('modalBackdrop').style.display = 'grid';
     document.getElementById('closeModal').focus();
   }
