@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tomas Kuric — Financial Mathematics Student</title>
-  <meta name="description" content="Portfolio študenta finančnej matematiky — projekty, zručnosti a kontakt." />
+  <meta name="description" content="Portfolio of a Financial Mathematics student — projects, skills and contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -131,7 +131,7 @@
     /* simple modal */
     .modal-backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;place-items:center;padding:20px}
     .modal{background:linear-gradient(180deg, #06101a, #07101b);padding:20px;border-radius:12px;max-width:720px;width:100%;border:1px solid rgba(255,255,255,0.04)}
-    .modal h3{margin-top:0}
+    .modal h3{Margin-top:0}
     .close-btn{background:transparent;border:0;color:var(--muted);font-weight:700}
 
   </style>
@@ -142,75 +142,75 @@
       <div class="logo">
         <div class="brand">TK</div>
         <div>
-          <div style="font-weight:700">Tomáš Kurič</div>
+          <div style="font-weight:700">Tomas Kuric</div>
           <div style="font-size:12px;color:var(--muted);margin-top:3px">Financial Mathematics • Student</div>
         </div>
       </div>
       <nav>
-        <a href="#projects">Projekty</a>
-        <a href="#about">O mne</a>
-        <a href="#contact">Kontakt</a>
-        <a class="btn btn-ghost" href="/resume.pdf" target="_blank">CV</a>
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-ghost" href="/resume.pdf" target="_blank">Resume</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="intro">
-          <h1>Vitaj — som Tomáš. Prekladám čísla do prehľadných modelov a vizualizácií.</h1>
-          <p>Študujem finančnú matematiku a mám záujem o kvantitatívne metódy, modelovanie rizika a reprodukovateľné analýzy. Nižšie sú vybrané projekty — noteboky, dashboardy a malé demo aplikácie.</p>
+          <h1>Hi — I'm Tomas. I turn numbers into clear models and visuals.</h1>
+          <p>I study financial mathematics and enjoy translating quantitative ideas into reproducible code, clean reports and interactive visuals. Below are a few selected projects — mostly Python, some R and a little web work.</p>
           <div class="ctas">
-            <a class="btn btn-primary" href="#projects">Pozrieť projekty</a>
-            <a class="btn btn-ghost" href="#contact">Kontakt</a>
+            <a class="btn btn-primary" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
           </div>
         </div>
 
         <aside class="profile-card" aria-hidden="false">
           <div class="blob"></div>
           <div style="display:flex;align-items:center;gap:12px;position:relative;z-index:2">
-            <img class="avatar" src="https://via.placeholder.com/200x200.png?text=Foto" alt="Portrét">
+            <img class="avatar" src="https://via.placeholder.com/200x200.png?text=Photo" alt="Portrait">
             <div>
               <div class="meta">
                 <div>
-                  <h3>Tomáš Kurič</h3>
-                  <p>Financial Mathematics • Univerzita</p>
+                  <h3>Tomas Kuric</h3>
+                  <p>Financial Mathematics • University</p>
                 </div>
               </div>
-              <div class="small">Hľadám stáže a entry-level pozície. Otvorený remote aj onsite.</div>
+              <div class="small">Available for internships & entry-level quantitative roles. Open to remote or on-site opportunities.</div>
             </div>
           </div>
         </aside>
       </section>
 
       <section id="projects" class="projects">
-        <h2 style="margin:0 0 18px 0">Vybrané projekty</h2>
+        <h2 style="margin:0 0 18px 0">Selected projects</h2>
         <div class="projects-grid">
           <article class="card" data-proj="1">
             <div class="thumb">─ Pricing Monte Carlo ─</div>
             <h4>Monte Carlo Option Pricer</h4>
-            <p>Rýchly vektorový pricer pre vanilla a barrier opcie. Variance reduction a odhad citlivostí.</p>
+            <p>Fast vectorised pricer for vanilla & barrier options. Includes variance reduction and sensitivity estimation.</p>
             <div class="tech">
               <span class="tag">Python</span>
               <span class="tag">NumPy</span>
               <span class="tag">Pandas</span>
             </div>
             <div class="links">
-              <a class="link" href="#" data-open="1">Detaily</a>
-              <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric','_blank')">Kód</a>
+              <a class="link" href="#" data-open="1">Details</a>
+              <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric','_blank')">Code</a>
             </div>
           </article>
 
           <article class="card" data-proj="2">
             <div class="thumb">─ Time Series Dashboard ─</div>
             <h4>Risk Dashboard</h4>
-            <p>Interaktívny dashboard (VaR, rolling vol, stress-tests) postavený na Plotly Dash.</p>
+            <p>Interactive dashboard showing VaR, rolling volatility and scenario analysis. Built with Plotly + Dash.</p>
             <div class="tech">
               <span class="tag">Python</span>
               <span class="tag">Plotly</span>
               <span class="tag">Dash</span>
             </div>
             <div class="links">
-              <a class="link" href="#" data-open="2">Detaily</a>
+              <a class="link" href="#" data-open="2">Details</a>
               <a class="link" href="#" onclick="event.preventDefault();window.open('https://yourdashdemo.example','_blank')">Demo</a>
             </div>
           </article>
@@ -218,15 +218,15 @@
           <article class="card" data-proj="3">
             <div class="thumb">─ Term Structure Study ─</div>
             <h4>Term Structure Analysis</h4>
-            <p>Fitting krivky výnosov (Svensson), bootstrapping a vizualizácie v notebooku.</p>
+            <p>Yield curve modelling (Svensson & Nelson–Siegel) and forecast evaluation. Reproducible notebook included.</p>
             <div class="tech">
               <span class="tag">R</span>
               <span class="tag">tidyverse</span>
               <span class="tag">ggplot2</span>
             </div>
             <div class="links">
-              <a class="link" href="#" data-open="3">Detaily</a>
-              <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric/term-structure','_blank')">Kód</a>
+              <a class="link" href="#" data-open="3">Details</a>
+              <a class="link" href="#" onclick="event.preventDefault();window.open('https://github.com/tomaskuric/term-structure','_blank')">Code</a>
             </div>
           </article>
 
@@ -235,12 +235,12 @@
 
       <section id="about" class="about">
         <div>
-          <h2 style="margin-top:0">O mne</h2>
-          <p style="color:var(--muted)">Som študent so záujmom o kvantitatívne modelovanie: stochastická kalkulus, časové rady, rizikové metódy a numerické techniky. Preferujem čistý, reprodukovateľný kód a prehľadné vizualizácie.</p>
-          <p style="color:var(--muted)">Zameriavam sa na option pricing, portfolio optimisation a model risk.</p>
+          <h2 style="margin-top:0">About me</h2>
+          <p style="color:var(--muted)">I'm a student with interests in quantitative finance: stochastic calculus, time series, risk modelling and numerical methods. I prefer clean, reproducible code and clear visualisations.</p>
+          <p style="color:var(--muted)">Current interests: option pricing, portfolio optimisation and model risk.</p>
         </div>
         <div>
-          <h3 style="margin:0">Zručnosti</h3>
+          <h3 style="margin:0">Skills</h3>
           <div class="skills" style="margin-top:10px">
             <span class="tag">Python</span>
             <span class="tag">NumPy</span>
@@ -251,15 +251,15 @@
             <span class="tag">Time Series</span>
             <span class="tag">Mathematical Finance</span>
           </div>
-          <div style="margin-top:16px;color:var(--muted);font-size:13px">Otvorený spolupráci na open-source projektoch.</div>
+          <div style="margin-top:16px;color:var(--muted);font-size:13px">Open to collaborating on open-source projects and demos.</div>
         </div>
       </section>
 
       <section id="contact" style="margin-bottom:48px">
-        <h2 style="margin-top:0">Kontakt</h2>
-        <p style="color:var(--muted)">Ak máte záujem o stáž alebo spoluprácu — napíšte email alebo sa spojme cez LinkedIn.</p>
+        <h2 style="margin-top:0">Contact</h2>
+        <p style="color:var(--muted)">If you'd like to discuss internships, projects or collaborations — email me or connect on LinkedIn.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
-          <a class="btn btn-primary" href="mailto:you@example.com">Napíšte mi</a>
+          <a class="btn btn-primary" href="mailto:you@example.com">Email me</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
           <a class="btn btn-ghost" href="https://github.com/tomaskuric" target="_blank">GitHub</a>
         </div>
@@ -268,7 +268,7 @@
     </main>
 
     <footer>
-      <div>© <span id="year"></span> Tomáš Kurič</div>
+      <div>© <span id="year"></span> Tomas Kuric</div>
       <div style="display:flex;gap:10px">
         <a href="https://github.com/tomaskuric" target="_blank" style="color:var(--muted);text-decoration:none">GitHub</a>
         <a href="https://www.linkedin.com" target="_blank" style="color:var(--muted);text-decoration:none">LinkedIn</a>
@@ -293,9 +293,9 @@
 
     // project details (demo content)
     const projectData = {
-      1: { title: 'Monte Carlo Option Pricer', body: `Vektorový generátor payoffov, antithetic sampling, control variates a merania výkonu (Jupyter notebook).` },
-      2: { title: 'Risk Dashboard', body: `Plotly Dash aplikácia s rolling VaR, historickými scenármi a jednoduchým deploym.` },
-      3: { title: 'Term Structure Analysis', body: `Fitting krivky výnosov, bootstrapping a vizualizácie v R/Python notebooku.` }
+      1: { title: 'Monte Carlo Option Pricer', body: `Vectorised payoff generation, antithetic sampling, control variates, and simple benchmarking (Jupyter notebook).` },
+      2: { title: 'Risk Dashboard', body: `Plotly Dash app with rolling VaR, historical scenarios and simple stress-tests.` },
+      3: { title: 'Term Structure Analysis', body: `Curve fitting, bootstrapping and visual analysis in a reproducible notebook.` }
     }
 
     // open modal
@@ -317,7 +317,7 @@
       const data = projectData[id];
       if(!data) return;
       document.getElementById('modalTitle').textContent = data.title;
-      document.getElementById('modalBody').innerHTML = `<p>${data.body}</p><p style="margin-top:12px;">Links: <a href="https://github.com/tomaskuric" target="_blank">Kód</a> • <a href="#">Notebook</a></p>`;
+      document.getElementById('modalBody').innerHTML = `<p>${data.body}</p><p style="margin-top:12px;">Links: <a href="https://github.com/tomaskuric" target="_blank">Code</a> • <a href="#">Notebook</a></p>`;
       const mb = document.getElementById('modalBackdrop');
       mb.style.display = 'grid';
       document.getElementById('closeModal').focus();
