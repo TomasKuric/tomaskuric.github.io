@@ -113,8 +113,11 @@ nav a:hover{color:#fff;background:var(--glass)}
 
 /* projects */
 section.projects{margin-bottom:48px}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}.card{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
   padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(6px);
   transition:transform .28s ease,box-shadow .28s ease;
