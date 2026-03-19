@@ -188,7 +188,7 @@
     1: { 
       title: 'Interior Point Methods', 
       body: `
-<p>This project demonstrates the use of <strong>Interior Point Methods</strong> to solve linear programming problems.</p>
+<p>This project demonstrates the use of <strong>Interior Point Methods</strong> to solve linear programming problems. Key aspects include:</p>
 <ul>
   <li>Implements a barrier method with Newton’s method and backtracking line search.</li>
   <li>Maintains feasibility with respect to inequality constraints throughout iterations.</li>
@@ -203,7 +203,7 @@
       body: `
 <p>This project models and optimizes a <strong>bond portfolio</strong> to meet future cash flow requirements using linear programming. Key aspects include:</p>
 <ul>
-  <li>Formulates a linear program that incorporates bond coupons, yields, maturities, and monthly cash flow needs.</li>
+  <li>Formulates a linear program that incorporates bond coupons, yields, maturities, and monthly cash flow.</li>
   <li>Accounts for borrowing and lending rates to accurately reflect financing constraints.</li>
   <li>Calculates bond prices and constructs matrices to model portfolio cash flows over time.</li>
   <li>Solves for the optimal number of bond units, initial deposit, and remaining balances in each period.</li>
@@ -216,7 +216,7 @@
     3: { 
       title: 'Measuring Efficiency with DEA', 
       body: `
-<p>This project implements <strong>Data Envelopment Analysis (DEA)</strong> to evaluate the efficiency of multiple decision-making units (DMUs). Key highlights include:</p>
+<p>This project implements <strong>Data Envelopment Analysis (DEA)</strong> to evaluate the efficiency of multiple decision-making units (DMUs). Key aspects include:</p>
 <ul>
   <li>Uses both CCR (Charnes, Cooper, Rhodes) and BCC (Banker, Charnes, Cooper) two-phase models to calculate efficiency scores for DMUs.</li>
   <li>Implements linear programming for efficiency measurement, including slack adjustments and target projections.</li>
@@ -228,21 +228,21 @@
 `,
       code: 'https://github.com/TomasKuric/Projects/blob/main/DEA_Efficiency_Analysis'
     },
-    4: { 
-      title: 'Measuring Efficiency with DEA', 
-      body: `
-<p>This project implements <strong>Data Envelopment Analysis (DEA)</strong> to evaluate the efficiency of multiple decision-making units (DMUs). Key highlights include:</p>
+4: { 
+  title: 'Black-Scholes Option Pricing using Finite Volume Method', 
+  body: `
+<p>This project solves the <strong>Black-Scholes PDE</strong> numerically to price European options. Key aspects include:</p>
 <ul>
-  <li>Uses both CCR (Charnes, Cooper, Rhodes) and BCC (Banker, Charnes, Cooper) two-phase models to calculate efficiency scores for DMUs.</li>
-  <li>Implements linear programming for efficiency measurement, including slack adjustments and target projections.</li>
-  <li>Calculates CRS (constant returns to scale) and VRS (variable returns to scale) efficiency to analyze scale effects.</li>
-  <li>Computes input/output projections, slacks, and scale efficiency for a detailed performance overview.</li>
-  <li>Visualizes efficiency scores with a bar chart comparing CCR vs BCC models against the efficient frontier.</li>
-  <li>Demonstrates both the theoretical framework and practical implementation of DEA for performance assessment.</li>
+  <li>Transforms the Black-Scholes equation into a discretized form suitable for numerical methods.</li>
+  <li>Implements the <strong>Finite Volume Method (FVM)</strong> to approximate option prices over a computational grid.</li>
+  <li>Implements the <strong>Finite Difference Method (FDM)</strong> as an alternative discretization for comparison.</li>
+  <li>Validates numerical results against the closed-form Black-Scholes analytical solution.</li>
+  <li>Analyzes absolute error of both methods.</li>
+  <li>Visualizes option price surfaces and error profiles using Matplotlib.</li>
 </ul>
 `,
-      code: 'https://github.com/TomasKuric/Projects/blob/main/DEA_Efficiency_Analysis'
-    }
+  code: 'https://github.com/TomasKuric/Projects/blob/main/Black-Scholes_Model_FVM.py'
+}
   };
   
 
