@@ -32,7 +32,7 @@
     <section class="hero">
       <div class="intro">
         <h1>I'm Tomas. I study financial mathematics and build things with Python and R.</h1>
-        <p>Below are a few selected projects that I've built so far.</p>
+        <p> Below are a few selected projects that I've build so far.</p>
         <div class="ctas">
           <a class="btn btn-primary" href="#projects">See my work</a>
           <a class="btn btn-ghost" href="#contact">Get in touch</a>
@@ -41,14 +41,17 @@
 
       <aside class="profile-card" aria-hidden="false">
         <div class="blob"></div>
-        <div style="position:relative;z-index:2">
-          <div class="meta">
-            <div>
-              <h3>Tomáš Kuric</h3>
-              <p>Financial Mathematics Graduate</p>
+        <div style="display:flex;align-items:center;gap:12px;position:relative;z-index:2">
+          <img class="avatar" src="assets/css/profile.jpg" alt="Portrait">
+          <div>
+            <div class="meta">
+              <div>
+                <h3>Tomáš Kuric</h3>
+                <p>Financial Mathematics Graduate</p>
+              </div>
             </div>
+            <div class="small">Seeking internship opportunities in financial and economic analysis, data analytics or related fields.</div>
           </div>
-          <div class="small">Seeking internship opportunities in financial and economic analysis, data analytics or related fields.</div>
         </div>
       </aside>
     </section>
@@ -57,27 +60,25 @@
     <section id="projects" class="projects">
       <h2 style="margin:0 0 18px 0">Selected projects</h2>
       <div class="projects-grid">
-
-        <article class="card" data-proj="4">
-          <div class="thumb">─ Options Pricing ─</div>
-          <h4>Black-Scholes Option Pricing using Finite Volume Method</h4>
-          <p>Solved the Black-Scholes PDE numerically using the Finite Volume Method to price European options. Discretized the PDE on a spatial grid, proved strict diagonal dominance of the resulting matrix, and validated accuracy with the analytical solution and Finite Difference Method.</p>
+        <article class="card" data-proj="1">
+          <div class="thumb">─ Interior Point Methods ─</div>
+          <h4>Solving Linear Programming Problems Using Barrier Method</h4>
+          <p>Implemented Interior Point Methods to efficiently solve linear optimization problems, finding optimal solutions for resource allocation, scheduling, and portfolio optimization scenarios.</p>
           <div class="tech">
             <span class="tag">Python</span>
             <span class="tag">NumPy</span>
-            <span class="tag">Matplotlib</span>
-            <span class="tag">PDE Solvers</span>
+            <span class="tag">SciPy</span>
           </div>
           <div class="links">
-            <a class="link" href="#" data-open="4">Details</a>
-            <a class="link code-link" href="#" data-proj="4">Code</a>
+            <a class="link" href="#" data-open="1">Details</a>
+            <a class="link code-link" href="#" data-proj="1">Code</a>
           </div>
         </article>
 
         <article class="card" data-proj="2">
           <div class="thumb">─ Bond Portfolio Optimization ─</div>
           <h4>Bond Portfolio Optimization with Linear Programming</h4>
-          <p>Optimized bond portfolio to meet future cash flow requirements using linear programming, determining the best allocation.</p>
+          <p>Optimized bond portfolio to meet future cash flow requirements using linear programming, determining the best allocation, deposit, and borrowing strategy.</p>
           <div class="tech">
             <span class="tag">Python</span>
             <span class="tag">NumPy</span>
@@ -106,21 +107,21 @@
           </div>
         </article>
 
-        <article class="card" data-proj="1" style="grid-column: 1 / 2;">
-          <div class="thumb">─ Interior Point Methods ─</div>
-          <h4>Solving Linear Programming Problems Using Barrier Method</h4>
-          <p>Implemented Interior Point Methods to efficiently solve linear optimization problems, finding optimal solutions for resource allocation, scheduling, and portfolio optimization scenarios.</p>
-          <div class="tech">
-            <span class="tag">Python</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">SciPy</span>
-          </div>
-          <div class="links">
-            <a class="link" href="#" data-open="1">Details</a>
-            <a class="link code-link" href="#" data-proj="1">Code</a>
-          </div>
-        </article>
-
+        <article class="card" data-proj="4" style="grid-column: 1 / 2;">
+        <div class="thumb">─ Options Pricing ─</div>
+        <h4>Black-Scholes Option Pricing using Finite Volume Method</h4>
+        <p>Solved the Black-Scholes PDE numerically using the Finite Volume Method to price European options. Compared results with the Finite Difference Method and analytical solutions to validate accuracy and stability.</p>
+        <div class="tech">
+          <span class="tag">Python</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">PDE Solvers</span>
+        </div>
+        <div class="links">
+          <a class="link" href="#" data-open="4">Details</a>
+          <a class="link code-link" href="#" data-proj="4">Code</a>
+        </div>
+      </article>
       </div>
     </section>
 
@@ -128,7 +129,8 @@
     <section id="about" class="about">
       <div>
         <h2 style="margin-top:0">About me</h2>
-        <p style="color:var(--muted)">I'm a financial mathematics graduate with a focus on numerical methods, probability, and financial mathematics. I enjoy turning mathematical models into clean, reproducible code — whether that's pricing derivatives, optimizing portfolios, or building statistical analyses.</p>
+        <p style="color:var(--muted)">I'm a student with interests in calculus, probability, statistics, numerical methods, and coding. I enjoy creating clean, reproducible analyses and clear visualizations.</p>
+        <!--<p style="color:var(--muted)">Current interests: option pricing, portfolio optimisation and model risk.</p>-->
       </div>
       <div>
         <h3 style="margin:0">Skills</h3>
@@ -138,11 +140,12 @@
           <span class="tag">SciPy</span>
           <span class="tag">R</span>
           <span class="tag">Excel VBA</span>
-          <span class="tag">Statistical Methods</span>
-          <span class="tag">Optimalization Methods</span>
+          <span class="tag">Linear Programming</span>
+          <span class="tag">Mathematical Programming</span>
           <span class="tag">Probability and Statistics</span>
-          <span class="tag">Financial Mathematics</span>
+          <span class="tag">Mathematical Finance</span>
         </div>
+        <!--<div style="margin-top:16px;color:var(--muted);font-size:13px">Open to collaborating on open-source projects and demos.</div>-->
       </div>
     </section>
 
@@ -152,11 +155,19 @@
       <p style="color:var(--muted)">Feel free to email me.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
         <a class="btn btn-primary" href="mailto:tomaskuric2@gmail.com">Email me</a>
+        <!--<a class="btn btn-ghost" href="https://www.linkedin.com" target="_blank">LinkedIn</a>-->
         <a class="btn btn-ghost" href="https://github.com/tomaskuric" target="_blank">GitHub</a>
       </div>
     </section>
   </main>
 
+  <footer>
+    <div>© <span id="year"></span> Tomas Kuric</div>
+    <div style="display:flex;gap:10px">
+      <!--<a href="https://github.com/tomaskuric" target="_blank" style="color:var(--muted);text-decoration:none">GitHub</a>-->
+      <!--<a href="https://www.linkedin.com" target="_blank" style="color:var(--muted);text-decoration:none">LinkedIn</a>-->
+    </div>
+  </footer>
 </div>
 
 <!-- Modal -->
@@ -171,15 +182,17 @@
 </div>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
   const projectData = {
     1: { 
       title: 'Interior Point Methods', 
       body: `
 <p>This project demonstrates the use of <strong>Interior Point Methods</strong> to solve linear programming problems. Key aspects include:</p>
 <ul>
-  <li>Implements a barrier method with Newton's method and backtracking line search.</li>
+  <li>Implements a barrier method with Newton’s method and backtracking line search.</li>
   <li>Maintains feasibility with respect to inequality constraints throughout iterations.</li>
-  <li>Calculates optimal solutions for given inputs and verifies results using SciPy's IPM solver.</li>
+  <li>Calculates optimal solutions for given inputs and verifies results using SciPy’s IPM solver.</li>
   <li>Illustrates both the theoretical foundation and practical implementation of linear programming optimization.</li>
 </ul>
 `,
@@ -215,23 +228,25 @@
 `,
       code: 'https://github.com/TomasKuric/Projects/blob/main/DEA_Efficiency_Analysis'
     },
-    4: { 
-      title: 'Black-Scholes Option Pricing using Finite Volume Method', 
-      body: `
-<p>This project is the implementation from my Bachelor's thesis. It solves the <strong>Black-Scholes PDE</strong> numerically to price European options. Key aspects include:</p>
+4: { 
+  title: 'Black-Scholes Option Pricing using Finite Volume Method', 
+  body: `
+<p>This project solves the <strong>Black-Scholes PDE</strong> numerically to price European options. Key aspects include:</p>
 <ul>
-  <li>Discretizes the Black-Scholes equation using the <strong>Finite Volume Method (FVM)</strong> on a non-uniform spatial grid.</li>
-  <li>Proves strict diagonal dominance of the resulting coefficient matrix, guaranteeing convergence of iterative solvers.</li>
-  <li>Implements the <strong>Finite Difference Method (FDM)</strong> as an alternative discretization for comparison.</li>
-  <li>Validates both methods against the closed-form Black-Scholes analytical solution.</li>
-  <li>Analyzes absolute error profiles and convergence behaviour of both schemes.</li>
+  <li>Transforms the Black-Scholes equation into a discretized form suitable for numerical methods.</li>
+  <li>Implements the Finite Volume Method (FVM) to approximate option prices over a computational grid.</li>
+  <li>Implements the Finite Difference Method (FDM) as an alternative discretization for comparison.</li>
+  <li>Validates numerical results against the closed-form Black-Scholes analytical solution.</li>
+  <li>Analyzes absolute error of both methods.</li>
   <li>Visualizes option price surfaces and error profiles using Matplotlib.</li>
 </ul>
 `,
-      code: 'https://github.com/TomasKuric/Projects/blob/main/Black-Scholes_Model_FVM.py'
-    }
+  code: 'https://github.com/TomasKuric/Projects/blob/main/Black-Scholes_Model_FVM.py'
+}
   };
+  
 
+  // Open modal with project details
   document.querySelectorAll('[data-open]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -239,14 +254,16 @@
     });
   });
 
+  // Clicking anywhere on card also opens modal
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', (e) => {
-      if(e.target.closest('.links')) return;
+      if(e.target.closest('.links')) return; // ignore clicks on links
       const pid = card.getAttribute('data-proj'); 
       if(pid) openModal(pid);
     })
   })
 
+  // Open correct Code link
   document.querySelectorAll('.code-link').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
