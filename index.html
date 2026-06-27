@@ -41,17 +41,14 @@
 
       <aside class="profile-card" aria-hidden="false">
         <div class="blob"></div>
-        <div style="display:flex;align-items:center;gap:12px;position:relative;z-index:2">
-          <img class="avatar" src="assets/css/fotka2.png" alt="Portrait">
-          <div>
-            <div class="meta">
-              <div>
-                <h3>Tomáš Kuric</h3>
-                <p>Financial Mathematics Graduate</p>
-              </div>
+        <div style="position:relative;z-index:2">
+          <div class="meta">
+            <div>
+              <h3>Tomáš Kuric</h3>
+              <p>Financial Mathematics Graduate</p>
             </div>
-            <div class="small">Seeking internship opportunities in financial and economic analysis, data analytics or related fields.</div>
           </div>
+          <div class="small">Seeking internship opportunities in financial and economic analysis, data analytics or related fields.</div>
         </div>
       </aside>
     </section>
@@ -160,11 +157,6 @@
     </section>
   </main>
 
-  <!--
-  <footer>
-    <div>© <span id="year"></span> Tomas Kuric</div>
-  </footer>
-  -->
 </div>
 
 <!-- Modal -->
@@ -179,8 +171,6 @@
 </div>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
   const projectData = {
     1: { 
       title: 'Interior Point Methods', 
